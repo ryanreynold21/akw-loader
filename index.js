@@ -1,5 +1,5 @@
 
-function showLoader(){
+export function showLoader(){
     const loaderdiv = document.createElement("div")
     loaderdiv.classList.add("loader")
     loaderdiv.innerHTML =`
@@ -12,11 +12,11 @@ function showLoader(){
     document.body.append(loaderdiv)
 };
 
-function removeLoader() {
+export function removeLoader() {
     document.querySelector(".loader").remove()
 }
 
-function showprogress(){
+export function showprogress(){
     const progress = document.createElement("div");
     progress.classList.add("progress");
     progress.innerHTML = `
@@ -26,6 +26,6 @@ function showprogress(){
         document.body.append(progress)
 };
 
-function removeProgress() {
+export function removeProgress() {
     document.querySelector(".progress").remove()
 }
